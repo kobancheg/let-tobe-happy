@@ -264,19 +264,19 @@ img {max-width:100%;
 	width: 100%;
 }
 #home [class*="brick"] {
-	background: #8ac7af;
-	background:rgba(138,199,175,0.9);
+	background: #e9ccd0;
+	background:rgba(233,204,208,0.9);
 	color: #ffffff;
 }
-#home [class*="brick"]:hover {background: #8ac7af;
+#home [class*="brick"]:hover {background: #e9ccd0;
 }
 #home .odd {
-	background: #8ac7af;
-	background:rgba(138,199,175,0.7);
+	background: #e9ccd0;
+	background:rgba(233,204,208,0.7);
 }
 #home .logo_container {
 	z-index: 2;
-	background: #8ac7af !important;
+	background: #e9ccd0 !important;
 }
 #home .logo_container .slogan {
 	display:block;
