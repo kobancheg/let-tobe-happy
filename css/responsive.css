@@ -235,6 +235,9 @@
 		font-size: 16px;
 		line-height: 18px;
 	}
+    #home .nav-item .cont span {
+        padding-top: 10px;
+    }
 }
 @media (max-width: 600px) {
 	.full_slider_caption {
