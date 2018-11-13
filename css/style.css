@@ -542,7 +542,11 @@ nav.mobile_header {display:none!important;
 .separator-bg {
 	min-height:400px;
 }
-.separator-bg.set1 {background-image:url(../images/slider/2.jpg);}
+.separator-bg.set1 {
+	/*background-image:url(../images/slider/2.jpg);*/
+	background-color: #ffffff;
+	min-height: 80px!important;
+}
 .separator-bg.set2 {background-image:url(../images/slider/2.jpg);}
 .separator-bg.set3 {background-image:url(../images/slider/2.jpg);}
 .separator-bg.set4 {background-image:url(../images/slider/2.jpg);}
