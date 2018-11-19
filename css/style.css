@@ -738,6 +738,14 @@ nav.mobile_header {display:none!important;
 	display:block;
 	font-weight:700;
 }
+.team_block i {
+	color: #767676;
+}
+.team_block span {
+	font-size: 26px;
+	font-weight: 400;
+}
+
 /***/
 
 
@@ -761,6 +769,23 @@ nav.mobile_header {display:none!important;
 }
 .item-course .directions {
 	color:#666;
+}
+blockquote, blockquote p {
+	line-height: 1.6;
+	color: #8a8a8a;
+}
+blockquote {
+	margin: 0 0 1rem;
+	padding: 0.5625rem 1.25rem 0 1.1875rem;
+	border-left: 1px solid #cacaca;
+}
+cite {
+	display: block;
+	font-size: 0.8125rem;
+	color: #8a8a8a;
+}
+cite:before {
+	content: "— ";
 }
 
 
