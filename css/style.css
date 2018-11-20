@@ -591,6 +591,9 @@ nav.mobile_header {display:none!important;
 	overflow:hidden;
 	padding-bottom:65px;	
 }
+#courses header, #events header {
+	padding-bottom:0;
+}
 .page_section header div.container {
 	z-index:900;
 	position: relative;
