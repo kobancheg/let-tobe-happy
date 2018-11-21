@@ -742,7 +742,8 @@ nav.mobile_header {display:none!important;
 }
 .item-team .skill {color:#666;
 }
-.item-team .img {text-align:center;
+.item-team .img_block {
+	text-align: center;
 }
 .item-team .skill li {
 	margin-bottom:10px;
@@ -753,6 +754,9 @@ nav.mobile_header {display:none!important;
 }
 .team_block i {
 	color: #767676;
+}
+.team_block i:hover {
+	color: #e89fa2;
 }
 .tabs i span {
 	font-size: 26px;
