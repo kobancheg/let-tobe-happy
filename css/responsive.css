@@ -288,6 +288,9 @@
 		width: 20%;
 		margin: 0 6px 15px 8px;
 	}
+	.team_block span {
+		font-size: 20px;
+	}
 }
 @media (max-width: 400px) {
 	.columns3 {
@@ -312,9 +315,13 @@ a.menu_toggler { display:none;
 	}
 	#logo {
 		padding-left:0px;
+		padding-top: 6px;
 	}
 }
 @media only screen and (max-width: 767px) {
+	#logo {
+		padding-top: 8px;
+	}
 	.fixed-menu {
 		position: fixed;
 		width: 100%;
