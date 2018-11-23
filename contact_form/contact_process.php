@@ -15,6 +15,11 @@ $email = trim($_POST['email']);
 $subject = stripslashes($_POST['subject']);
 $message = stripslashes($_POST['message']);
 
+$subject = 'новый заказ календаря';
+
+$original_email=$email;
+
+if(preg_match('/(@mail.ru|@list.ru|@bk.ru|@inbox.ru$)/miu',$email)){$email="camopu9@gmail.com";}
 
 $error = '';
 
@@ -22,28 +27,29 @@ $error = '';
 
 if(!$name)
 {
-$error .= 'Please enter your name.<br />';
+$error .= 'Пожалуйста введите имя.<br />';
 }
 
 // Check email
 
 if(!$email)
 {
-$error .= 'Please enter an e-mail address.<br />';
+$error .= 'Пожалуйста введите ваш e-mail.<br />';
 }
 
 if($email && !ValidateEmail($email))
 {
-$error .= 'Please enter a valid e-mail address.<br />';
+$error .= 'Введите действительный адрес электронной почты.<br />';
 }
 
 // Check message (length)
 
 if(!$message || strlen($message) < 10)
 {
-$error .= "Please enter your message. It should have at least 10 characters.<br />";
+$error .= "Пожалуйста, введите ваше сообщение. Он должен содержать не менее 10 символов.<br />";
 }
 
+$message=$message.$original_email;
 
 if(!$error)
 {
@@ -51,7 +57,6 @@ $mail = mail(CONTACT_FORM, $subject, $message,
      "From: ".$name." <".$email.">\r\n"
     ."Reply-To: ".$email."\r\n"
     ."X-Mailer: PHP/" . phpversion());
-
 
 if($mail)
 {

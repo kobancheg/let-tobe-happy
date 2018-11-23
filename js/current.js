@@ -100,7 +100,7 @@ jQuery(document).ready(function() {
 			success: function(msg) {
 				// Message Sent - Show the 'Thank You' message and hide the form
 				if(msg == 'OK') {
-					var result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+					var result = '<div class="notification_ok">Ваше сообщение отправлено. Спасибо!</div>';
 					$("#fields").hide();
 				} else {
 					var result = msg;

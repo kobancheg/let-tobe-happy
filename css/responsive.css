@@ -320,7 +320,7 @@ a.menu_toggler { display:none;
 }
 @media only screen and (max-width: 767px) {
 	#logo {
-		padding-top: 8px;
+		padding-top: 10px;
 	}
 	.fixed-menu {
 		position: fixed;
